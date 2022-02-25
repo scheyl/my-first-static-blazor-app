@@ -1,20 +1,13 @@
 {
-
   "navigationFallback": {
     "rewrite": "/index.html"
-
   },
   "networking": {
     "allowedIpRanges": [ "AzureFrontDoor.Backend" ]
   },
   "forwardingGateway": {
     "requiredHeaders": {
-      "X-Azure-FDID": "420acb5a-f1b9-4f79-a638-e7b679d7ae96",
-      "route": "/members",
-      "allowedRoles": [ "authenticated, members" ],
-      "headers": {
-        "Cache-Control": "no-store"
-      }
+      "X-Azure-FDID": "420acb5a-f1b9-4f79-a638-e7b679d7ae96"
     },
     "allowedForwardedHosts": [
       "my-sitename.azurefd.net"
